@@ -11,9 +11,13 @@
     </div>
     <div class="">
       <label for="amountInput">Iterations</label>
-      <input type="range" id="amountRange" min="7" max="250" value="50" oninput="this.nextElementSibling.value=this.value" />
-      <input type="number" id="amountInput" min="7" max="250" value="50" oninput="this.previousElementSibling.value=this.value" />
+      <input type="range" id="amountRange" min="1" max="250" value="50" oninput="this.nextElementSibling.value=this.value" />
+      <input type="number" id="amountInput" min="1" max="250" value="50" oninput="this.previousElementSibling.value=this.value" />
       <button id="draw">Draw</button>
+      <select id="color">
+        <option value="color" selected>Colored</option>
+        <option value="greyscale">Greyscale</option>
+      </select>
     </div>
   </body>
 </html>

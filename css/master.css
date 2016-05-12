@@ -53,6 +53,8 @@ select {
 
 body {
   background-color: #86B2E0;
+  display: flex;
+
 }
 
 .title {
@@ -65,6 +67,7 @@ body {
   width: auto;
   display: flex;
   width: auto;
+  height: 300px;
   flex-direction: column;
   margin: 30px 0 0 40px;
   border: 1px solid white;

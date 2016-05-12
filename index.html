@@ -8,9 +8,7 @@
   </head>
   <body>
     <!-- <div class="title"> Do the Mandelbrot</div> -->
-    <div class="canvas-container">
-      <canvas id="root" width="1080" height="720" class="canvas-default"></canvas>
-    </div>
+
     <div class="control-panel">
       <div class="title">Do the Mandelbrot</div>
       <div className="iteration-control">
@@ -19,14 +17,19 @@
         <input type="number" id="amountInput" min="1" max="300" value="50" oninput="this.previousElementSibling.value=this.value" />
       </div>
       <select id="color">
-        <option value="color">Colored</option>
-        <option value="greyscale" selected>Greyscale</option>
+        <option value="0">Blue</option>
+        <option value="1">Green</option>
+        <option value="-1" selected>Greyscale</option>
+        <option value="-2">Inverted Greyscale</option>
       </select>
       <label for="smooth">
         <input type="checkbox" id="smooth" />
         Anti-aliasing
       </label>
       <button id="draw">Draw</button>
+    </div>
+    <div class="canvas-container">
+      <canvas id="root" width="1080" height="720" class="canvas-default"></canvas>
     </div>
   </body>
 </html>

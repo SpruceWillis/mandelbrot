@@ -13,8 +13,8 @@
       <div class="title">Do the Mandelbrot</div>
       <div className="iteration-control">
         <label for="amountInput">Iterations</label>
-        <input type="range" id="amountRange" min="1" max="300" value="50" oninput="this.nextElementSibling.value=this.value" />
-        <input type="number" id="amountInput" min="1" max="300" value="50" oninput="this.previousElementSibling.value=this.value" />
+        <input type="range" id="amountRange" min="1" max="200" value="35" oninput="this.nextElementSibling.value=this.value" />
+        <input type="number" id="amountInput" min="1" max="200" value="35" oninput="this.previousElementSibling.value=this.value" />
       </div>
       <select id="color">
         <option value="0">Blue</option>
@@ -27,11 +27,15 @@
         Anti-aliasing
       </label>
       <div className="zoom-control">
-        <label for="zoom">Zoom %</label>
-        <input type="range" id="zoomRange"  min="100" max="500" value="100" oninput="this.nextElementSibling.value=this.value"/>
-        <input type="number" id="zoomInput" min="100" max="500" value="100" oninput="this.previousElementSibling.value=this.value" />
+        <label for="zoom">Magnification %</label>
+        <input type="range" id="zoomRange"  min="0" max="500" value="0" oninput="this.nextElementSibling.value=this.value"/>
+        <input type="number" id="zoomInput" min="0" max="500" value="0" oninput="this.previousElementSibling.value=this.value" />
       </div>
-      <button id="draw">Draw</button>
+      <br/>
+      <div class="">
+        Click on picture to toggle zoom
+      </div>
+      <!-- <button id="draw">Draw</button> -->
     </div>
     <div class="canvas-container">
       <canvas id="root" width="1080" height="720" class="canvas-default"></canvas>

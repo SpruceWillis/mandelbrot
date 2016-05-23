@@ -20,18 +20,22 @@
         <option value="-1" selected>Greyscale</option>
         <option value="-2">Inverted Greyscale</option>
       </select>
-      <label for="smooth">
+      <p id="smooth">
+        <input type="checkbox" id="chk-smooth"/>
+        <label for="chk-smooth" id="lbl-smooth">Color Smoothing</label>
+      </p>
+      <!-- <label for="smooth">
         <input type="checkbox" id="smooth" />
-        Anti-aliasing
-      </label>
+        Color Smoothing
+      </label> -->
       <div className="zoom-control">
         <label for="zoom">Magnification %</label>
         <div class="zoomButtons">
           <button id="zoomPlus">+</button>
           <button id="zoomMinus">-</button>
         </div>
-        <input type="range" id="zoomRange"  min="0" max="1000" step="25" value="0" oninput="this.nextElementSibling.value=this.value"/>
-        <input type="number" id="zoomInput" min="0" max="1000" value="0" oninput="this.previousElementSibling.value=this.value" />
+        <input type="range" id="zoomRange"  min="0" max="2000" step="25" value="0" oninput="this.nextElementSibling.value=this.value"/>
+        <input type="number" id="zoomInput" min="0" max="2000" value="0" oninput="this.previousElementSibling.value=this.value" />
       </div>
     </div>
     <div class="canvas-container">

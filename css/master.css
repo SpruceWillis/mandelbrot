@@ -38,13 +38,6 @@ select {
   margin: 5px;
 }
 
-.canvas-default {
-  margin: auto;
-  cursor: auto;
-  cursor: -moz-zoom-in;
-  cursor: -webkit-zoom-in;
-}
-
 .canvas-container {
   margin: 10px;
   float: left;
@@ -67,7 +60,7 @@ body {
   width: auto;
   display: flex;
   width: auto;
-  height: 345px;
+  height: 375px;
   flex-direction: column;
   justify-content: space-around;
   margin: 30px 0 0 40px;
@@ -93,9 +86,29 @@ select {
   color: black;
 }
 
+.canvas-default {
+  margin: auto;
+  cursor: auto;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+}
+
 .canvas-zoomed {
   margin: auto;
   cursor: auto;
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
 }
+
+.zoomButtons > button {
+  font-size: 18px;
+  width: 25%;
+}
+
+/*.zoomButtons {
+  border: 1px solid;
+  padding: 5px 2px;
+  border-radius: 5px;
+  margin: 5px auto;
+  border-style: dashed
+}*/

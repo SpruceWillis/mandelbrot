@@ -88,16 +88,10 @@ select {
 
 .canvas-default {
   margin: auto;
-  cursor: auto;
-  cursor: -moz-zoom-in;
-  cursor: -webkit-zoom-in;
-}
+  cursor: crosshair;;
+  cursor: -moz-crosshair;
+  cursor: -webkit-crosshair;
 
-.canvas-zoomed {
-  margin: auto;
-  cursor: auto;
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
 }
 
 .zoomButtons > button {
